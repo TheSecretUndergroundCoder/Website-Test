@@ -13,25 +13,23 @@
         <input type="checkbox" id="chk" aria-hidden="true">
 
         <div class="signup">
-            <form action="/">
-
+            <form action="/signup" method="POST"> <!-- Updated action and method -->
                 <label for="chk" aria-hidden="true">Sign up</label>
-                <input type="text" name="txt" placeholder="User name" required="">
-
-                <input type="email" name="email" id="" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="password" id="" required="">
-                <input type="password" name="pswd" placeholder="Confirm password" id="" required="">
-                <button href="youtube.com">Sign up</button>
+                <input type="text" name="username" placeholder="User name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="password" placeholder="password" required="">
+                <input type="password" name="confirm_password" placeholder="Confirm password" required="">
+                <button type="submit">Sign up</button> <!-- Added type attribute -->
             </form>
         </div>
 
         <div class="login">
-            <form action="C:\Users\finns\OneDrive\Desktop\All Desktop Folders\Website\404.html">
+            <form action="/login" method="POST"> <!-- Updated action and method -->
                 <label for="chk" aria-hidden="true">Login</label>
-                <input type="email" name="email" id="" placeholder="Email or User name" required="">
-                <input type="password" name="password" id="" placeholder="password" required="">
-                <button>Login</button>
-                <p>Don't have account <a href="#">Create account</a>.</p>
+                <input type="text" name="username" placeholder="Email or User name" required="">
+                <input type="password" name="password" placeholder="password" required="">
+                <button type="submit">Login</button> <!-- Added type attribute -->
+                <p>Don't have an account? <a href="#">Create account</a>.</p>
             </form>
         </div>
     </div>
